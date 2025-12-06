@@ -1,0 +1,55 @@
+name: ❓ Question
+description: 使い方や仕様についての質問はこちら
+title: "[Question] 質問のタイトル"
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ご質問ありがとうございます！
+        可能な範囲で、以下の内容を入力してください 🙏
+
+  - type: input
+    id: target
+    attributes:
+      label: 対象プロジェクト
+      description: アプリ名 / yanak.dev / ゲーム開発プロジェクトなど
+      placeholder: "例: AppName / yanak.dev / XXXGame"
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: 質問内容
+      description: 知りたいこと・困っていることを具体的に書いてください。
+      placeholder: |
+        例:
+        - AppName のバックアップデータの保存場所はどこですか？
+        - 〇〇と××の違いを知りたいです。
+        - yanak.dev の記事について詳しく聞きたい。
+    validations:
+      required: true
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: 試したこと（任意）
+      description: すでに試した操作や確認したことがあれば教えてください。
+      placeholder: |
+        例:
+        - 設定画面を確認しましたが、それらしい項目が見当たりませんでした。
+        - README と FAQ を読みましたが、記載が見つかりませんでした。
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: 使用環境（任意）
+      description: アプリやサイトに関する質問の場合、端末やOS、ブラウザなどを書いてください。
+      placeholder: "例: Pixel 9 / Android 16 / Chrome / AppName v1.0"
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: その他メモ（任意）
+      placeholder: "補足や関連Issueがあれば記述してください。"
