@@ -1,0 +1,25 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: 📘 ドキュメント / 利用ガイド
+    url: https://yanak.dev
+    about: まずはこちらの情報もご確認ください。
+
+issue_templates:
+  - name: 🐞 Bug Report
+    description: 不具合の報告はこちら
+    file: bug_report.yml
+    labels:
+      - bug
+
+  - name: ✨ Feature Request
+    description: 新機能の提案・改善案はこちら
+    file: feature_request.yml
+    labels:
+      - enhancement
+
+  - name: ❓ Question
+    description: 使い方や仕様についての質問はこちら
+    file: question.yml
+    labels:
+      - question
