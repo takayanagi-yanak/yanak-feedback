@@ -1,0 +1,74 @@
+name: 🐞 Bug Report
+description: 不具合の報告はこちら
+title: "[Bug] 問題のタイトル"
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        可能な範囲で以下の項目を入力してください。
+        入力内容が詳細であるほど、修正がスムーズになります🙏
+
+  - type: input
+    id: app
+    attributes:
+      label: 対象プロジェクト
+      description: アプリ名 / yanak.dev / ゲーム開発プロジェクト など
+      placeholder: "例: AppName v1.0"
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: 使用環境
+      description: 端末名・OS・ブラウザなど（モバイルアプリの場合は必須）
+      placeholder: "例: Pixel 9 / Android 16"
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 不具合の内容
+      description: どのような問題が発生したか、できるだけ詳しく書いてください。
+      placeholder: |
+        例:
+        - 月ビューを開くとアプリがクラッシュする
+        - CSV出力で日付がずれている
+        - yanak.dev のリンクが404になる
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 再現手順
+      description: 発生手順を番号付きで書いてください。
+      placeholder: |
+        1. トップ画面を開く
+        2. ○○ボタンを押す
+        3. アプリが落ちる
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 本来期待される動作
+      placeholder: |
+        例:
+        - 月ビューが正常に開くべき
+        - CSVが実際の記録と一致してほしい
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: スクリーンショット / ログ（任意）
+      description: 可能であれば画像やエラーログを貼ってください。
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: その他メモ（任意）
+      placeholder: "気づいた点や補足などあれば自由に記述してください。"
