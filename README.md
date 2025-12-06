@@ -1,6 +1,6 @@
 # yanak-feedback
 
-このリポジトリは、**yanak.dev各種プロジェクト**に関する  
+このリポジトリは、**yanak.dev 各種プロジェクト**に関する  
 **不具合報告・改善提案・質問** を受け付けるための公開フィードバック窓口です。
 
 ---
@@ -16,7 +16,7 @@
 - 再現手順
 - スクリーンショット（可能であれば）
 
-👉 [Bug Report を作成する](../../issues/new?labels=bug)
+👉 **[Bug Report を作成する](../../issues/new?template=bug_report.yml&labels=bug)**
 
 ---
 
@@ -24,7 +24,7 @@
 
 「あったらいいな」「使いにくい部分がある」などの改善提案はこちら：
 
-👉 [Feature Request を作成する](../../issues/new?labels=enhancement)
+👉 **[Feature Request を作成する](../../issues/new?template=feature_request.yml&labels=enhancement)**
 
 ---
 
@@ -32,7 +32,7 @@
 
 使用方法・仕様に関する質問はこちら：
 
-👉 [Question を作成する](../../issues/new?labels=question)
+👉 **[Question を作成する](../../issues/new?template=question.yml&labels=question)**
 
 ---
 
